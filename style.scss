@@ -1,0 +1,11 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    width: 100%;
+    background: $root-bg;
+}
