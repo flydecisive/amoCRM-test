@@ -17,6 +17,7 @@
     padding-right: 10vw;
     padding-top: 48px;
     position: relative;
+    overflow-x: hidden;
 
     &__elem {
         filter: blur(196px);
@@ -169,11 +170,16 @@
 }
 
 .main {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 70px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 70px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
     &__text {
         text-transform: uppercase;
