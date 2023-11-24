@@ -1,0 +1,152 @@
+@media (max-width: 376px) {
+    .root {
+        height: min-100dvh;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 60px;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &__left {
+            width: 100%;
+        }
+    }
+
+    .nav {
+        &__wrapper {
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &__link {
+            color: $text-base-color;
+            font-family: &inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+
+    .main {
+        flex-flow: column nowrap;
+        padding-top: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 59px;
+        gap: 45px;
+        margin-bottom: 0;
+        background: url('./assets/img/noise.png'), lightgray 0% 0% / 100px 100px repeat;
+        mix-blend-mode: overlay;
+
+        &__text {
+            font-size: 18px;
+            text-align: left;
+            text-transform: lowercase;
+        }
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .left {
+        gap: 15px;
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+    .right {
+        align-items: flex-start;
+
+        &__text {
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        &__items {
+            column-gap: 10px;
+            row-gap: 14px;
+        }
+
+        &__item {
+            &-heading {
+                text-align: left;
+                font-size: 13px;
+                letter-spacing: 0.65px;
+                display: flex;
+                gap: 5px;
+            }
+
+            &-span {
+                background-image: $gradient-color;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+
+    .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+        flex-flow: column nowrap;
+        padding-top: 45px;
+
+        &__heading {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        &__link {
+            font-size: 14px;
+            line-height: 100%;
+        }
+
+        &__left {
+            flex-flow: column nowrap;
+            gap: 30px;
+        }
+
+        &__item {
+            height: fit-content;
+        }
+
+        &__list {
+            &-grid {
+                grid-template-rows: 1fr repeat(4, 18px);
+                column-gap: 48px;
+                row-gap: 10px;
+            }
+
+            &-right {
+                align-items: flex-start;
+                gap: 10px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .copyright {
+        left: 0;
+        text-align: left;
+    }
+}
