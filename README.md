@@ -5,7 +5,7 @@
 ## Ссылка на готовый проект
 
 https://flydecisive.github.io/amoCRM-test/
-![My Image](assets/images/preview.png)
+<img src="./assets/preview.png" alt="preview">
 
 ## Используемые технологии
 
